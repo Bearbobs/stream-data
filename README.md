@@ -27,9 +27,16 @@ data: {"bar": "baz"}
 ...
 ```
 
-Features:
+## Features:
 
 * Easy to consume from browsers or native applications.
 * Highly reliable. Events can be persisted to your database, so clients can recover if they get disconnected.
 * Set per-user channel permissions.
 
+## How to Setup:
+python3 is assumed to be installed, if not do the same
+```
+virtualenv venv
+pip install django django-restframework django-eventstream
+python manage.py runserver
+```

@@ -2,7 +2,7 @@
 Data Streaming application using Django Channels
 It provides API endpoints for your Django application that can push data to connected clients. Data is sent using the Server-Sent Events protocol (SSE), in which data is streamed over a never-ending HTTP response.
 
-For example, you could create an endpoint, `/events/`, that a client could connect to with a GET request:
+For example, endpoint, `/events/`, that a client could connect to with a GET request:
 
 ```http
 GET /events/ HTTP/1.1

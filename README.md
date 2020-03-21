@@ -40,6 +40,8 @@ virtualenv venv
 pip install django django-restframework django-eventstream
 python manage.py runserver
 ```
+for Authorization: channelmanager in stream app
+for Generating data: generators.py
 
 ### for Scaling and Large UserBase:
 you need to run multiple instances of your Django project for high availability, or need to push data from management commands, or need to be able to scale to a large number of connections, you can introduce a GRIP proxy layer (such as [Pushpin](https://pushpin.org) or [Fanout Cloud](https://fanout.io)) into your architecture.

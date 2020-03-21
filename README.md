@@ -37,7 +37,9 @@ data: {"bar": "baz"}
 python3 is assumed to be installed, if not do the same
 ```
 virtualenv venv
-pip install django django-restframework django-eventstream
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py makemigrations
 python manage.py runserver
 ```
 for Authorization: channelmanager in stream app

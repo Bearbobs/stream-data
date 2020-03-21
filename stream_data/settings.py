@@ -32,6 +32,11 @@ EVENTSTREAM_STORAGE_CLASS = 'django_eventstream.storage.DjangoModelStorage'
 EVENTSTREAM_CHANNELMANAGER_CLASS = 'stream.channelmanager.MyChannelManager'
 # Application definition
 
+CHANNELS_API = {
+    'DEFAULT_PERMISSION_CLASSES': ('channels_api.permissions.AllowAny',)
+
+}
+
 INSTALLED_APPS = [
     'django.contrib.admin',
     'django.contrib.auth',
@@ -41,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'channels',
     'django_eventstream',
+    'stream'
 ]
 
 MIDDLEWARE = [
